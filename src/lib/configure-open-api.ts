@@ -16,8 +16,8 @@ export default function configureOpenAPI(app: AppOpenAPI) {
   app.get(
     "/reference",
     apiReference({
-      theme: "kepler",
-      layout: "classic",
+      theme: "kepler",  // doc: https://github.com/scalar/scalar/blob/main/documentation/themes.md
+      // layout: "classic", 
       defaultHttpClient: {
         targetKey: "javascript",
         clientKey: "fetch",
